@@ -1,0 +1,180 @@
+html{
+    font-size: 62.5%;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{    
+    /* background: url(./assets/background.jpg); */
+    background: linear-gradient(#084C61,#DDEDAA);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Dosis', sans-serif;
+    display: flex;
+    height: 100vh;
+    flex-flow: column;
+    
+}
+/* Header */
+.header{
+    /* display: flex;
+    flex-flow: row;
+    justify-content: center; */
+    /* overflow: hidden; */
+    /* text-overflow: ellipsis; */
+    white-space: nowrap;
+    text-align: center;
+    padding-top: 3rem;
+}
+.header h1{
+    color: #dff3e4;
+    text-decoration: underline;
+    letter-spacing: 0.3rem;
+    font-weight: bold;
+    font-size: min(max(4vw,3rem), 5rem);
+}
+/* Main Content */
+.section{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px;
+    width: calc(100vw-10px);
+    height: calc(100vh);
+}
+
+/* Score board */
+.score--box{
+    text-align: center;
+    color: white;
+    border-radius: 4rem;
+    background: #25626b;
+    box-shadow: 0px 0px 0.5rem #25626b;
+    opacity: 0.8;
+    padding: 3.5rem 9rem;
+    font-size: 5rem;
+    width: 33rem;
+}
+.score--badge{
+    display: inline-block;
+    color: #25626b;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0rem 0rem 4rem 2rem rgba(255, 255, 255, 0.2);
+    border-radius: 2rem;
+    padding: 2rem 4rem;
+    font-size: 2rem;
+    text-align: center;
+    position: relative;
+    top: 10.5rem;
+    z-index: 1;
+}
+.badge-user{
+    right: 6rem;
+}
+.badge-cpu{
+    left: 15rem;
+}
+
+/* Choice container */
+.choice-container{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+.choice-container--options{
+    width: 40rem;
+    margin-top: 5rem;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.choice-container--options img{
+    width: 6.5rem;
+    cursor: pointer;
+    transition: 450ms;
+
+}
+
+.choice-container--options:hover img:hover{
+    transform: scale(1.4);
+    opacity: 1;
+}
+
+/* Restart button */
+.restart-btn{
+    margin-top: 2rem;
+    width: 20rem;
+    height: 5rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 10rem;
+    background: #084C61;
+    box-shadow: 0px 0px 5rem #25626b;
+    opacity: 0.6;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+}
+.restart-btn:hover{
+    background-color: rgba(255, 255, 255, 1);
+    color: #084C61;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 450ms;
+}
+
+.choice-container--options:hover img{
+    opacity: 0.3;
+}
+
+/* Footer */
+.footer{
+    /* height: 6rem;
+    margin-top: auto;
+    padding-top: 4rem;
+    margin-bottom: 4rem; */
+    display: flex;
+    justify-content: center;
+}
+.footer p{
+    color: #084C61;
+    font-weight: bold;
+    font-size: 2rem;
+    /* padding-bottom: 50px; */
+}
+
+/* Mobile apps: Tablet */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  { 
+    
+}
+
+/* Mobile: iphone 6-7-8 */
+@media only screen and (max-width: 767px) {
+    .score--box{
+        width: 23rem;
+    }
+    .score--badge{
+        padding: 2rem 2.5rem;
+        top: 10.5rem;
+    }
+    .badge-user{
+        right: 6rem;
+    }
+    .badge-cpu{
+        left: 11rem;
+    }   
+    .choice-container--options{
+        width: 35rem;
+    }   
+
+}

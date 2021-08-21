@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Styles -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./modal.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+    <!-- Others -->
+    <link rel="shortcut icon" href="#">
+    <!-- Title -->
+    <title>Piedra papel o tijeras</title>
+</head>
+<body>
+    <header class="header">
+        <h1>Rock - Paper - Scissor</h1>
+    </header>
+    <section class="section">
+        <!-- <button class="restart-btn">Restart</button> -->
+        <div class="score">
+            <div class="score--badge badge-user" >User</div>
+            <div class="score--badge badge-cpu">CPU</div>
+            <div class="score--box">
+                <span id="user-score">0</span>:<span id="cpu-score">0</span>
+            </div>
+        </div>
+        <div class="choice-container">
+            <div id="user-options" class="choice-container--options">
+                <div><img src="./assets/icon_stone.png" id="stone" alt="stone"></div>
+                <div><img src="./assets/icon_paper.png" id="paper" alt="paper"></div>
+                <div><img src="./assets/icon_scissor.png" id="scissor" alt="scissor"></div>            
+            </div>
+            <button id="restart-game" class="restart-btn">Restart</button>
+        </div>
+        <!-- Modal -->
+        <div class="modal">
+            <div id="result" class="modal-content">
+                <h1>Ganaste</h1>
+                <p>La compu eligio</p>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <p> Thanks for playing! </p>
+    </footer>
+
+    <script src="./main.js"></script>
+</body>
+</html>
