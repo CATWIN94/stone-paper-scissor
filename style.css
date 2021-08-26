@@ -50,7 +50,8 @@ body{
 
 /* Score board */
 .score--box{
-    text-align: center;
+    display: flex;
+    justify-content: center;
     color: white;
     border-radius: 4rem;
     background: #25626b;
@@ -176,5 +177,18 @@ and (max-device-width : 1024px)  {
     .choice-container--options{
         width: 35rem;
     }   
+
+    .choice-container--options:hover img:hover, .choice-container--options:active img:active {
+        transform: scale(1.4);
+        opacity: 1;
+    }
+
+    .restart-btn:hover, .restart-btn:active{
+        background-color: rgba(255, 255, 255, 1);
+        color: #084C61;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 450ms;
+    }
 
 }
